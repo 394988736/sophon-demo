@@ -131,7 +131,7 @@ python3 tools/export_onnx.py --model_path /workspace/chatglm3-6b --onnx_path ./m
 目前TPU-MLIR支持1684x对ChatGLM3进行F16, INT8和INT4量化，使用如下命令生成bmodel。
 
 ```bash
-./script/gen_bmodel --mode fp16
+./scripts/gen_bmodel.sh --mode fp16
 ```
 
 其中，mode可以指定fp16/int8/int4，编译成功之后，模型将会存放在`models/BM1684X/`目录下。
